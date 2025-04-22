@@ -4,7 +4,7 @@ import '../services/firestore_service.dart';
 class GameCard extends StatelessWidget {
   final dynamic game;
 
-  const GameCard({Key? key, required this.game}) : super(key: key);
+  const GameCard({super.key, required this.game});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,8 @@ class GameCard extends StatelessWidget {
         leading: Image.network(
           game['thumb'],
           width: 50,
-          errorBuilder: (context, error, stackTrace) => Icon(Icons.videogame_asset),
+          errorBuilder:
+              (context, error, stackTrace) => Icon(Icons.videogame_asset),
         ),
         title: Text(game['external']),
         subtitle: Text('Cheapest: \$${game['cheapest']}'),
@@ -22,9 +23,9 @@ class GameCard extends StatelessWidget {
           icon: Icon(Icons.favorite_border),
           onPressed: () {
             FirestoreService.addToWishlist(game['external'], game['cheapest']);
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(content: Text('Added to wishlist')),
-            );
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(SnackBar(content: Text('Added to wishlist')));
           },
         ),
       ),
