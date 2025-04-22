@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858503900684",
+    "project_id": "game-price-checker",
+    "storage_bucket": "game-price-checker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858503900684:android:a9502f0ab98470a5e14829",
+        "android_client_info": {
+          "package_name": "com.example.game_price_checker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBftbIK3zHyevRDm-lLrJ5Y1h7t2ttpMec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
